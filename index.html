@@ -2,16 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mockup – Page de présentation</title>
+  <title>Sponsoring – Volley Rixensart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
       background-color: #f5f5f5;
+      color: #333;
     }
 
     .page {
@@ -21,12 +22,11 @@
       background-color: #ffffff;
     }
 
-    /* Banner pleine largeur */
+    /* Banner */
     .banner img {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 4px;
     }
 
     /* Logo aligné à droite */
@@ -37,44 +37,99 @@
     }
 
     .logo-container img {
-      width: 180px; /* Ajustable selon ton logo */
+      width: 180px;
       height: auto;
     }
 
+    /* Hero section */
     header {
-      margin-bottom: 32px;
       text-align: center;
+      background-color: #3A73B8;
+      color: #fff;
+      padding: 40px 20px;
+      border-radius: 6px;
     }
 
     header h1 {
-      margin: 0 0 8px;
       font-size: 2rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     header p {
-      margin: 0;
-      color: #666666;
+      font-size: 1.1rem;
+      margin: 6px 0;
     }
 
+    /* Sections */
     .section {
-      margin: 32px 0;
+      margin: 40px 0;
     }
 
     .section h2 {
-      margin-bottom: 8px;
-      font-size: 1.4rem;
+      color: #3A73B8;
+      border-left: 5px solid #3A73B8;
+      padding-left: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
     }
 
     .section p {
-      margin: 0 0 12px;
+      margin-bottom: 12px;
     }
 
-    .section img {
-      max-width: 100%;
-      height: auto;
+    /* Bouton brochure */
+    .brochure-link a {
+      display: inline-block;
+      background-color: #3A73B8;
+      color: #fff;
+      padding: 10px 20px;
       border-radius: 4px;
-      display: block;
-      margin-top: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .brochure-link a:hover {
+      background-color: #2F5E9B;
+    }
+
+    /* Grille partenaires */
+    .partners {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .partners img {
+      width: 160px;
+      height: auto;
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Contact */
+    .contact {
+      background-color: #3A73B8;
+      color: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      font-size: 1.1rem;
     }
 
     footer {
@@ -98,42 +153,60 @@
 
     <!-- Logo aligné à droite -->
     <div class="logo-container">
-      <img src="images/logo.png" alt="Logo">
+      <img src="images/logo.png" alt="Logo du club">
     </div>
 
+    <!-- Hero section -->
     <header>
-      <h1>Titre de la page mockup</h1>
-      <p>Sous-titre ou baseline de la page.</p>
+      <h1>Rejoignez nos partenaires</h1>
+      <p>Construisons ensemble une collaboration gagnante au service du sport local.</p>
+      <p>Boostez votre visibilité dans tout le Brabant Wallon et Bruxelles grâce à un club dynamique et en pleine croissance.</p>
+      <p>Profitez d’avantages fiscaux tout en soutenant nos jeunes sportives et sportifs.</p>
     </header>
 
+    <!-- Pourquoi devenir partenaire -->
     <section class="section">
-      <h2>Section 1 – Présentation</h2>
-      <p>
-        Texte de démonstration pour la première section. Tu peux décrire le concept,
-        le produit, le service ou le contenu que cette page est censée représenter.
-      </p>
-      <img src="images/section1.jpg" alt="Illustration de la section 1">
+      <h2>Pourquoi devenir partenaire ?</h2>
+      <p><strong>Visibilité locale et régionale :</strong> votre marque est présente lors de nos matchs, événements, stages, publications et réseaux sociaux.</p>
+      <p><strong>Audience ciblée :</strong> familles, jeunes, commerçants, entreprises locales, écoles, clubs sportifs.</p>
+      <p><strong>Impact positif :</strong> vous soutenez un projet sportif, éducatif et social.</p>
+      <p><strong>Avantages fiscaux :</strong> le sponsoring sportif est déductible selon les règles en vigueur.</p>
+      <p><strong>Flexibilité :</strong> plusieurs formules adaptées à votre budget et à vos objectifs de communication.</p>
     </section>
 
+    <!-- Formules de sponsoring -->
     <section class="section">
-      <h2>Section 2 – Détails</h2>
-      <p>
-        Une deuxième zone de contenu pour détailler des fonctionnalités, des points
-        clés, ou des informations importantes. Ce texte pourra être copié-collé dans
-        un futur CMS.
-      </p>
+      <h2>Nos formules de sponsoring</h2>
+      <p>Plusieurs formules existent pour accroître votre image en soutenant nos jeunes sportives et sportifs.</p>
+      <div class="brochure-link">
+        <a href="brochure.pdf" target="_blank">Télécharger la brochure</a>
+      </div>
     </section>
 
+    <!-- Partenaires -->
     <section class="section">
-      <h2>Section 3 – Appel à l’action</h2>
-      <p>
-        Ici, tu peux simuler un bouton ou un lien vers une action importante
-        (contact, inscription, téléchargement, etc.).
-      </p>
+      <h2>Ils nous font confiance</h2>
+      <p>Merci à nos partenaires pour leur engagement et leur confiance.</p>
+
+      <div class="partners">
+        <img src="images/partner1.png" alt="Partenaire 1">
+        <img src="images/partner2.png" alt="Partenaire 2">
+        <img src="images/partner3.png" alt="Partenaire 3">
+        <img src="images/partner4.png" alt="Partenaire 4">
+        <img src="images/partner5.png" alt="Partenaire 5">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <h2>Contactez-nous</h2>
+      <p>Envie de devenir partenaire ? Parlons-en !</p>
+      <p>Email : contact@volleyrixensart.be</p>
+      <p>Téléphone : 0470 00 00 00</p>
     </section>
 
     <footer>
-      Mockup de page web – Yan · Contenu fictif pour intégration future dans un CMS.
+      Volley Rixensart – Page Sponsoring · Contenu fictif pour intégration future dans le site officiel.
     </footer>
 
   </div>
