@@ -29,18 +29,6 @@
       display: block;
     }
 
-    /* Logo aligné à droite */
-    .logo-container {
-      text-align: right;
-      margin-top: 12px;
-      margin-bottom: 32px;
-    }
-
-    .logo-container img {
-      width: 180px;
-      height: auto;
-    }
-
     /* Hero section */
     header {
       text-align: center;
@@ -48,6 +36,7 @@
       color: #fff;
       padding: 40px 20px;
       border-radius: 6px;
+      margin-top: 20px;
     }
 
     header h1 {
@@ -65,6 +54,7 @@
     /* Sections */
     .section {
       margin: 40px 0;
+      position: relative;
     }
 
     .section h2 {
@@ -77,6 +67,21 @@
 
     .section p {
       margin-bottom: 12px;
+    }
+
+    /* Illustration à droite */
+    .illustration-right {
+      float: right;
+      width: 40%;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .illustration-right img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
     }
 
     /* Bouton brochure */
@@ -104,13 +109,22 @@
       margin-top: 20px;
     }
 
-    .partners img {
-      width: 160px;
-      height: auto;
+    .partner-box {
+      width: 180px;
+      height: 120px;
       background: #fff;
       padding: 12px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .partner-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
 
     /* Contact */
@@ -162,6 +176,12 @@
     <!-- Pourquoi devenir partenaire -->
     <section class="section">
       <h2>Pourquoi devenir partenaire ?</h2>
+
+      <!-- Illustration à droite -->
+      <div class="illustration-right">
+        <img src="images/illustration.png" alt="Illustration sponsoring">
+      </div>
+
       <p><strong>Visibilité locale et régionale :</strong> votre marque est présente lors de nos matchs, événements, stages, publications et réseaux sociaux.</p>
       <p><strong>Audience ciblée :</strong> familles, jeunes, commerçants, entreprises locales, écoles, clubs sportifs.</p>
       <p><strong>Impact positif :</strong> vous soutenez un projet sportif, éducatif et social.</p>
@@ -184,11 +204,11 @@
       <p>Merci à nos partenaires pour leur engagement et leur confiance.</p>
 
       <div class="partners">
-        <img src="images/partner1.png" alt="Partenaire 1">
-        <img src="images/partner2.png" alt="Partenaire 2">
-        <img src="images/partner3.png" alt="Partenaire 3">
-        <img src="images/partner4.png" alt="Partenaire 4">
-        <img src="images/partner5.png" alt="Partenaire 5">
+        <div class="partner-box"><img src="images/partner1.png" alt="Partenaire 1"></div>
+        <div class="partner-box"><img src="images/partner2.png" alt="Partenaire 2"></div>
+        <div class="partner-box"><img src="images/partner3.png" alt="Partenaire 3"></div>
+        <div class="partner-box"><img src="images/partner4.png" alt="Partenaire 4"></div>
+        <div class="partner-box"><img src="images/partner5.png" alt="Partenaire 5"></div>
       </div>
     </section>
 
